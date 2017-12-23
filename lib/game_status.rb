@@ -37,11 +37,8 @@ def won?(board)
       board[combo[1]],
       board[combo[2]]
     ]
-    if position_values == ["X","X","X"] || position_values == ["O","O","O"]
-      won = true
-    end
+    position_values == ["X","X","X"] || position_values == ["O","O","O"]
   end
-  won
 end
 
 board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
