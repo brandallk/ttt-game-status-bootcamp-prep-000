@@ -25,3 +25,6 @@ def won?(board)
     puts position_values
   end
 end
+
+board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
+won?(board)
