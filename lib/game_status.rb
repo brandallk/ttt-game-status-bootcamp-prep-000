@@ -27,7 +27,9 @@ def won?(board)
 end
 
 def full?(board)
-  board.none? do |position|
+  board.all? do |position|
+    position_taken?(board, board.index(position))
+  end
 end
 
 # board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
