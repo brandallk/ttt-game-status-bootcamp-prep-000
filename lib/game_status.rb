@@ -44,7 +44,7 @@ def winner(board)
   won?(board) ? board[won?(board)[0]] : nil
 end
 
- board = ["X", " ", "O", "O", " ", "O", "X", " ", " "]
+ board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
 # puts won?(board)
 # puts full?(board)
  puts winner(board)
