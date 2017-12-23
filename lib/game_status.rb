@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.detect? do |combo|
+  WIN_COMBINATIONS.detect do |combo|
     position_values = [
       board[combo[0]],
       board[combo[1]],
