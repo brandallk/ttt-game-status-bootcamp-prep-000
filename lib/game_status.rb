@@ -23,7 +23,7 @@ def won?(board)
       board[combo[1]],
       board[combo[2]]
     ]
-    position_values == ["X","X","X"] || position_values == ["O","O","O"]
+    three_in_a_row.include? position_values
   end
 end
 
