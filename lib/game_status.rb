@@ -32,6 +32,6 @@ def full?(board)
   end
 end
 
- board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
+ board = ["X", "X", "O", "X", "X", "O", "X", "X", "X"]
 # puts won?(board)
  puts full?(board)
