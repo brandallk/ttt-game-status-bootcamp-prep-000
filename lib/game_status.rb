@@ -15,6 +15,6 @@ WIN_COMBINATIONS = [
   [2,4,6], # top-left to bottom-right diagonal
 ]
 
-def won?(board)
+#def won?(board)
   
-end
+#end
