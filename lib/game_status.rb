@@ -27,7 +27,7 @@ def won?(board)
       won = true
     end
   end
-  #won
+  won
 end
 
 board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
