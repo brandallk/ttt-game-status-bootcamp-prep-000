@@ -40,6 +40,10 @@ def over?(board)
   won?(board) || draw?(board)
 end
 
+def winner(board)
+  board[won?(board)[0]]
+end
+
 # board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
 # puts won?(board)
 # puts full?(board)
