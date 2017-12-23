@@ -26,5 +26,9 @@ def won?(board)
   end
 end
 
+def full?(board)
+  board.none
+end
+
 # board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
 # puts won?(board)
