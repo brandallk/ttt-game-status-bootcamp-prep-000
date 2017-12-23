@@ -27,8 +27,8 @@ def won?(board)
       won = true
     end
   end
-  won
+  #won
 end
 
-board = ["X", " ", "O", "O", " ", "O", "X", " ", " "]
+board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
 puts won?(board)
