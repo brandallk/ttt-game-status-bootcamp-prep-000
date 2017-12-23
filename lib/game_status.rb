@@ -22,7 +22,7 @@ def won?(board)
       board[combo[1]],
       board[combo[2]]
     ]
-    puts position_values
+    puts position_values.inspect
   end
 end
 
