@@ -16,14 +16,18 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  won = false
   WIN_COMBINATIONS.each do |combo|
     position_values = [
       board[combo[0]],
       board[combo[1]],
       board[combo[2]]
     ]
-    puts position_values.inspect
+    if position_values == ["X","X","X"] || position_values == ["O","O","O"]
+      won = true
+    end
   end
+  won
 end
 
 board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
