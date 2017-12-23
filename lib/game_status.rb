@@ -27,7 +27,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.none
+  board.none? do |position|
 end
 
 # board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
