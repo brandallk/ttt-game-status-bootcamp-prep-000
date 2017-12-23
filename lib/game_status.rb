@@ -16,14 +16,13 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  three_in_a_row = [["X","X","X"], ["O","O","O"]]
   WIN_COMBINATIONS.any? do |combo|
     position_values = [
       board[combo[0]],
       board[combo[1]],
       board[combo[2]]
     ]
-    three_in_a_row.include? position_values
+    [["X","X","X"], ["O","O","O"]].include? position_values
   end
 end
 
