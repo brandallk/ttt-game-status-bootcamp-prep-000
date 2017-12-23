@@ -36,6 +36,10 @@ def draw?(board)
   full?(board) && !won?(board)
 end
 
+def over?(board)
+  won?(board) && draw?(board)
+end
+
 # board = ["X", " ", "O", "X", " ", "O", "X", " ", " "]
 # puts won?(board)
 # puts full?(board)
