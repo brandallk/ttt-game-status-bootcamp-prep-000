@@ -15,6 +15,13 @@ WIN_COMBINATIONS = [
   [2,4,6], # top-left to bottom-right diagonal
 ]
 
-#def won?(board)
-  
-#end
+def won?(board)
+  WIN_COMBINATIONS.each do |combo|
+    position_values = [
+      board[combo[0]],
+      board[combo[1]],
+      board[combo[2]]
+    ]
+    puts position_values
+  end
+end
