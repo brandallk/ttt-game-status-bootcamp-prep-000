@@ -15,9 +15,23 @@ WIN_COMBINATIONS = [
   [2,4,6], # top-left to bottom-right diagonal
 ]
 
+# def won?(board)
+#   won = false
+#   WIN_COMBINATIONS.each do |combo|
+#     position_values = [
+#       board[combo[0]],
+#       board[combo[1]],
+#       board[combo[2]]
+#     ]
+#     if position_values == ["X","X","X"] || position_values == ["O","O","O"]
+#       won = true
+#     end
+#   end
+#   won
+# end
+
 def won?(board)
-  won = false
-  WIN_COMBINATIONS.each do |combo|
+  WIN_COMBINATIONS.any? do |combo|
     position_values = [
       board[combo[0]],
       board[combo[1]],
